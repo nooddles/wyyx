@@ -1,42 +1,32 @@
-#wrap{
+#wrap {
   width: 100%;
-  background: #333333;
-  .header{
+  background: #333333; }
+  #wrap .header {
     height: 36px;
-    font-size: 12px;
-  }
-  a{
+    font-size: 12px; }
+  #wrap a {
     background: url(//yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) center left no-repeat;
     color: #CC9756;
     line-height: 36px;
     float: left;
-   padding-left: 20px;
-  }
-  .list{
+    padding-left: 20px; }
+  #wrap .list {
     float: right;
     line-height: 36px;
-    color: #ccc;
-    li{
+    color: #ccc; }
+    #wrap .list li {
       float: left;
       margin-left: 10px;
-      cursor: pointer;
-      p{
-        margin-right: 10px;
-        &::before{
+      cursor: pointer; }
+      #wrap .list li p {
+        margin-right: 10px; }
+        #wrap .list li p::before {
           content: "";
           display: inline-block;
           height: 16px;
           border-left: 3px solid #5c5c5c;
-          vertical-align: middle;
-        }
-      }
-     
-    }
-  }
-  
-}
+          vertical-align: middle; }
 
-.container{
+.container {
   width: 1090px;
-  margin:  0 auto;
-}
+  margin: 0 auto; }

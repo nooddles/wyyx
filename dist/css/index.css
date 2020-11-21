@@ -13,19 +13,129 @@
   #wrap .list {
     float: right;
     line-height: 36px;
-    color: #ccc; }
+    color: #ccc;
+    position: relative; }
     #wrap .list li {
       float: left;
-      margin-left: 10px;
-      cursor: pointer; }
+      margin-left: 10px; }
       #wrap .list li p {
-        margin-right: 10px; }
+        cursor: pointer; }
         #wrap .list li p::before {
           content: "";
           display: inline-block;
           height: 16px;
-          border-left: 3px solid #5c5c5c;
-          vertical-align: middle; }
+          border-left: 1px solid #5c5c5c;
+          vertical-align: middle;
+          padding: 0 3px; }
+        #wrap .list li p .icon {
+          background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat; }
+        #wrap .list li p .phone {
+          display: inline-block;
+          margin-top: -2px;
+          background-position: 0 0;
+          width: 11px;
+          height: 11px;
+          margin-right: 3px; }
+        #wrap .list li p .arrow {
+          display: inline-block;
+          background-position: 0 -690px;
+          height: 6px;
+          width: 11px;
+          margin-left: 3px;
+          transform: rotate(180deg); }
+      #wrap .list li .box1 {
+        position: absolute;
+        width: 70px;
+        color: #ccc;
+        border: 1px #ccc solid;
+        top: 35px;
+        left: 244px;
+        display: none;
+        cursor: pointer; }
+        #wrap .list li .box1::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent #e4e4e4 transparent;
+          position: absolute;
+          top: -10px;
+          left: 30px; }
+        #wrap .list li .box1 .none {
+          border-style: none; }
+        #wrap .list li .box1 span {
+          text-align: center;
+          display: block;
+          margin: 0 5px;
+          border-bottom: 1px solid #ccc; }
+          #wrap .list li .box1 span:hover {
+            color: #CC9756; }
+      #wrap .list li:hover .box1 {
+        display: block; }
+      #wrap .list li .box2 {
+        position: absolute;
+        width: 70px;
+        color: #ccc;
+        border: 1px #ccc solid;
+        top: 36px;
+        left: 326px;
+        display: none;
+        cursor: pointer; }
+        #wrap .list li .box2::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent #e4e4e4 transparent;
+          position: absolute;
+          top: -10px;
+          left: 30px; }
+        #wrap .list li .box2 .none {
+          border-style: none; }
+        #wrap .list li .box2 span {
+          display: block;
+          text-align: center;
+          display: block;
+          margin: 0 5px;
+          border-bottom: 1px solid #ccc; }
+          #wrap .list li .box2 span:hover {
+            color: #CC9756; }
+      #wrap .list li:hover .box2 {
+        display: block; }
+      #wrap .list li .box3 {
+        width: 140px;
+        height: 150px;
+        background: #f1f0f0;
+        position: absolute;
+        top: 36px;
+        right: -52px;
+        display: none; }
+        #wrap .list li .box3::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent #e4e4e4 transparent;
+          position: absolute;
+          top: -10px;
+          left: 63px;
+          cursor: default; }
+        #wrap .list li .box3 img {
+          width: 120px;
+          height: 120px;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px; }
+        #wrap .list li .box3 span {
+          display: block;
+          line-height: 20px;
+          text-align: center;
+          color: #ccc; }
+      #wrap .list li:hover .box3 {
+        display: block; }
 
 .container {
   width: 1090px;

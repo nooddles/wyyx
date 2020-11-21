@@ -1,10 +1,10 @@
 #wrap{
   width: 100%;
   background: #333333;
-  .header{
+.header{
     height: 36px;
     font-size: 12px;
-  }
+}
   a{
     background: url(//yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) center left no-repeat;
     color: #CC9756;
@@ -12,7 +12,6 @@
     float: left;
    padding-left: 20px;
   }
-  
   .list{
     float: right;
     line-height: 36px;
@@ -32,9 +31,7 @@
           vertical-align: middle;
           padding: 0 3px;
         }
-        .icon{
-          background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat;
-        }
+       
         .phone{
           display: inline-block;
           margin-top: -2px;
@@ -61,6 +58,8 @@
         top: 35px;
         left:244px;
         display: none;
+        z-index: 50;
+        background: #fff;
         cursor: pointer;
         &::before{
           content: "";
@@ -72,6 +71,7 @@
           position: absolute;
           top: -10px;
           left: 30px;
+          
         }
         .none{
           border-style: none;
@@ -95,10 +95,12 @@
         width: 70px;
         color: #ccc;
         border: 1px #ccc solid;
+        background: #fff;
         top: 36px;
         left: 326px;
         display: none;
         cursor: pointer;
+        z-index: 50;
         &::before{
           content: "";
           width: 0;
@@ -135,6 +137,7 @@
         top: 36px;
         right: -52px;
         display: none;
+        z-index: 50;
         &::before{
           content: "";
           width: 0;
@@ -165,11 +168,112 @@
         display: block;
       }
     }
-    
   }
-  
 }
-
+#main{
+ margin-top: 20px;
+  a{
+    height: 60px;
+    width: 216px;
+    background-position: 0 -298px;
+    text-indent: -9999px;
+    float: left;
+    
+ }
+  .search{
+    float: left;
+    position: relative;
+    margin-left: 185px;
+    span{
+      position: absolute;
+      width: 20px;
+      height: 30px;
+      top:13px;
+      left: 15px;
+      background-position: 0 -510px;
+    }
+    input{
+      width: 442px;
+      height: 38px;
+      border-radius: 19px 0 0 19px;
+      font-size: 14px;
+      border: 1px solid #CC9756;
+      line-height: 38px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 34px;
+      margin-top: 8px;
+      box-sizing: border-box;
+    }
+    button{
+      width: 90px;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid #cc9756;
+      background: #cc9756;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 0 19px  19px 0 ;
+      cursor: pointer;
+      margin-top: 2px;
+      letter-spacing: 1px;
+      vertical-align:bottom;
+      &:hover{
+       opacity: 0.6;
+      }
+    }
+    p{
+      margin-left: 15px;
+      color: #cc9756;
+      line-height: 20px;
+      cursor: pointer;
+    }
+   
+  }
+  .shoppingcar{
+    float: right;
+    width: 134px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 19px;
+    border: 1px solid #cc9756;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  .size{
+    color: #cc9756;
+    font-size: 14px;
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  .img{
+    background-position: 0 -148px;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+   vertical-align: middle;
+   margin-top: -2px;
+   padding-right: 5px;
+  }
+  .circle{
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+.icon{
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat;
+}
 .container{
   width: 1090px;
   margin:  0 auto;

@@ -1,6 +1,7 @@
 #wrap{
   width: 100%;
   background: #333333;
+  //头部
  .header{
     height: 36px;
     font-size: 12px;
@@ -12,6 +13,8 @@
     float: left;
    padding-left: 20px;
   }
+
+  //头部导航
   .list{
     float: right;
     line-height: 36px;
@@ -20,7 +23,9 @@
     li{
       float: left;
       margin-left: 10px;
-      
+      &:hover{
+        color: #ffffff;
+      }
       p{
         cursor: pointer;
         &::before{
@@ -168,6 +173,7 @@
       }
     }
   }
+  //登录界面
   .bigbox{
     height: 339px;
     width: 304px;
@@ -181,6 +187,7 @@
     padding: 58px 40px 83px;
     border: 1px solid #999;
     overflow: hidden;
+    display: none;
     .tit{
       position: absolute;
       top: 18px;
@@ -211,10 +218,11 @@
         left: -120px;
       }
     }   
+
+    //手机验证登陆
    .content{
       width: 304px;
       height: 339px;
-      display: none;
      p{
       text-align: right;
       height: 26px;
@@ -242,7 +250,11 @@
         border: none;
         }  
       }
-     
+      strong{
+        text-align: left;
+        color: red;
+        line-height: 14px;
+      }
     .sli{
       width: 298px;
       height: 42px;
@@ -260,6 +272,7 @@
         box-shadow: 0 0 3px rgba(0,0,0,.3);
         cursor: pointer;
         background: #fff;
+        z-index: 99;
         &:hover{
           background: #1991fa;
         }
@@ -355,12 +368,11 @@
     margin-left: 10px;
     border-right: 1px solid #e8e8e8;
     background : url(https://yanxuan.nosdn.127.net/49f4a785eb9ded4831d8cb0ede642b3e.png) no-repeat;
-  } 
+   } 
+    //邮箱登录
    .log{
      width: 300px;
-     display: none;
-     display: none;
-   }
+    }
     .inputbox2{
       width: 100%;
       height: 36px;
@@ -428,6 +440,13 @@
       cursor: pointer;
       box-sizing: border-box;
       letter-spacing: 4px;
+    }
+    .close{
+      position: absolute;
+      top: 0px;
+      right: 4px;
+      font-size: 18px;
+      cursor: pointer;
     }
   } 
 }
@@ -499,6 +518,7 @@
 
 #main{
  margin-top: 20px;
+//  logo
   a{
     height: 60px;
     width: 216px;
@@ -507,6 +527,7 @@
     float: left;
     
  }
+// 搜索栏
   .search{
     float: left;
     position: relative;
@@ -558,6 +579,7 @@
     }
    
   }
+// 购物车
   .shoppingcar{
     float: right;
     width: 134px;
@@ -570,6 +592,9 @@
     margin-top: 8px;
     cursor: pointer;
     position: relative;
+    &:hover{
+      background: rgba($color: #999, $alpha: 0.1);
+    }
   }
   .size{
     color: #cc9756;
@@ -599,6 +624,37 @@
     font-size: 12px;
   }
 }
+
+//导航栏
+#nav{
+  margin-top: 30px;
+  box-sizing: border-box;
+  .nav{
+    a{
+      font-size: 14px;
+      padding: 0 22px;
+      font-weight: 600;
+      padding-bottom: 7px;
+      &:hover{
+        color: #cc9756;
+        border-bottom: 3px solid #cc9756;
+      }
+    }
+    .line{
+      border-right: 1px solid #c9c9c9;
+    }
+  }
+
+}
+
+#banner{
+  height: 420px;
+ background-image: url(https://yanxuan.nosdn.127.net/2b470a0cb3ecb31af1f7f56c06c9704a.png?type=webp&imageView&quality=95&thumbnail=1920x420);
+ background-size: cover;
+}
+
+
+// 精灵图
 .icon{
   background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat;
 }
@@ -608,11 +664,14 @@
 .icon3{
   background: url(https://urswebzj.nosdn.127.net/webzj_cdn101/sprite_61fbe151ab715649c6b7c4ec39156201.png);
 }
+
+
 .container{
   width: 1090px;
   margin:  0 auto;
 }
 
+//遮罩层
 .mask{
   position: absolute;
   top: 0;

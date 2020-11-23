@@ -18,6 +18,8 @@
     #wrap .list li {
       float: left;
       margin-left: 10px; }
+      #wrap .list li:hover {
+        color: #ffffff; }
       #wrap .list li p {
         cursor: pointer; }
         #wrap .list li p::before {
@@ -151,7 +153,8 @@
     text-align: center;
     padding: 58px 40px 83px;
     border: 1px solid #999;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
     #wrap .bigbox .tit {
       position: absolute;
       top: 18px;
@@ -178,8 +181,7 @@
         left: -120px; }
     #wrap .bigbox .content {
       width: 304px;
-      height: 339px;
-      display: none; }
+      height: 339px; }
       #wrap .bigbox .content p {
         text-align: right;
         height: 26px;
@@ -203,6 +205,10 @@
           width: 214px;
           font-size: 14px;
           border: none; }
+      #wrap .bigbox .content strong {
+        text-align: left;
+        color: red;
+        line-height: 14px; }
       #wrap .bigbox .content .sli {
         width: 298px;
         height: 42px;
@@ -219,7 +225,8 @@
           height: 42px;
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
           cursor: pointer;
-          background: #fff; }
+          background: #fff;
+          z-index: 99; }
           #wrap .bigbox .content .sli .square:hover {
             background: #1991fa; }
           #wrap .bigbox .content .sli .square:hover .down {
@@ -302,9 +309,7 @@
       border-right: 1px solid #e8e8e8;
       background: url(https://yanxuan.nosdn.127.net/49f4a785eb9ded4831d8cb0ede642b3e.png) no-repeat; }
     #wrap .bigbox .log {
-      width: 300px;
-      display: none;
-      display: none; }
+      width: 300px; }
     #wrap .bigbox .inputbox2 {
       width: 100%;
       height: 36px;
@@ -366,6 +371,12 @@
       cursor: pointer;
       box-sizing: border-box;
       letter-spacing: 4px; }
+    #wrap .bigbox .close {
+      position: absolute;
+      top: 0px;
+      right: 4px;
+      font-size: 18px;
+      cursor: pointer; }
 
 .other {
   position: absolute;
@@ -485,6 +496,8 @@
     margin-top: 8px;
     cursor: pointer;
     position: relative; }
+    #main .shoppingcar:hover {
+      background: rgba(153, 153, 153, 0.1); }
   #main .size {
     color: #cc9756;
     font-size: 14px;
@@ -509,6 +522,25 @@
     right: 12px;
     color: #fff;
     font-size: 12px; }
+
+#nav {
+  margin-top: 30px;
+  box-sizing: border-box; }
+  #nav .nav a {
+    font-size: 14px;
+    padding: 0 22px;
+    font-weight: 600;
+    padding-bottom: 7px; }
+    #nav .nav a:hover {
+      color: #cc9756;
+      border-bottom: 3px solid #cc9756; }
+  #nav .nav .line {
+    border-right: 1px solid #c9c9c9; }
+
+#banner {
+  height: 420px;
+  background-image: url(https://yanxuan.nosdn.127.net/2b470a0cb3ecb31af1f7f56c06c9704a.png?type=webp&imageView&quality=95&thumbnail=1920x420);
+  background-size: cover; }
 
 .icon {
   background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat; }

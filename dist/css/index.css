@@ -167,7 +167,8 @@
           color: #cc9756; }
       #wrap .bigbox .tit .s-left {
         margin-left: 25px;
-        float: left; }
+        float: left;
+        color: #333; }
       #wrap .bigbox .tit .s-right {
         margin-left: 100px;
         float: left; }

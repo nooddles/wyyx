@@ -172,3 +172,22 @@ window.onscroll = function(){
         nav.style.position= 'static';
     }
 }
+
+
+
+//选项卡切换
+var cut = document.querySelectorAll('.list2 ul li a img')
+var lis2 = document.querySelector('.list2 ul')
+var imgs =  document.querySelectorAll('.minbox img')
+var maximg =  document.querySelectorAll('.maxbox img')
+
+on(lis2,'click','img',function(){
+    for(var i = 0,len = cut.length; i <len; i++){
+            imgs[i].style.display = 'none';  
+            maximg[i].style.display = 'none';
+            cut[i].className = '' ;
+    }
+    this.className = 'on'
+    imgs[this.getAttribute('index')].style.display = 'block';
+    maximg[this.getAttribute('index')].style.display='block';
+})

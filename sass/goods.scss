@@ -72,6 +72,7 @@
 
 //商品详情
 #goods{
+  position: relative;
   .cnav{
     font-size: 12px;
     color: #333;
@@ -89,7 +90,7 @@
       z-index: 99;
       overflow: hidden;
     }
-    .list{
+    .list2{
       position: relative;
       margin-top: 14px;
       ul{
@@ -107,15 +108,19 @@
             width: 78px;
             height: 78px;
             margin: 0;
-            border: solid 2px #fff;
+            // border: solid 2px #fff;
+            box-sizing: border-box;
           }
           &:hover a{
-            border-color: #b4a078;
+            border:solid 1px  #b4a078;
           }
           img{
             width: 100%;
             height: 100%;
             background: #f4f4f4;
+          }
+          .on{
+            border: solid 2px #b4a078;
           }
         }
       }
@@ -416,5 +421,13 @@
         }
       }
     }
+  }
+  .maxbox{
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 52px;
+    left: 440px;
   }
 }

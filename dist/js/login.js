@@ -163,15 +163,28 @@ userlogin.onclick = function () {
   btn1.innerText = '登录';
   con.replaceChild(reipt, test);
 }; //切换账号登录
-//显示隐藏
 
 
-li.onclick = function () {
-  box.style.display = 'block';
-  mask.style.display = 'block';
-};
+userlogin.onclick = function () {
+  var passVal = emailpass.value;
+  con.removeChild(sli);
+  con.removeChild(checkbox);
+  userlogin.innerText = '短信快捷登录';
+  var reipt = document.createElement('div');
+  reipt.innerHTML = '<div class="icon3 logoimg3"></div><input type="password" placeholder="请输入密码">';
+  reipt.className = 'inputbox3';
+  btn1.innerText = '登录';
+  con.replaceChild(reipt, test);
+}; //导航栏吸顶效果
 
-close1.onclick = function () {
-  mask.style.display = 'none';
-  box.style.display = 'none';
+
+window.onscroll = function () {
+  var stop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (stop >= 152) {
+    nav.style.position = 'fixed';
+    nav.style.top = 0;
+  } else {
+    nav.style.position = 'static';
+  }
 };

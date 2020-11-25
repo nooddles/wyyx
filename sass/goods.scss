@@ -1,3 +1,71 @@
-h3{
-  color: red;
+// 精灵图
+.icon{
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat;
+}
+.icon2{
+  background: url(https://yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png?imageView&type=webp);
+}
+.icon3{
+  background: url(https://urswebzj.nosdn.127.net/webzj_cdn101/sprite_61fbe151ab715649c6b7c4ec39156201.png);
+}
+.icon4{
+  background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp);
+}
+.goodslist{
+  width: 1090;
+  background: #fff;
+  padding: 14px 20px 20px;
+  border: solid 1px rgba($color: #fff, $alpha: 0.3);
+  position: absolute;
+  top: 181px;
+  display: none;
+ ul{
+   float: left;
+   text-align: center;
+   h3{
+     display: inline-block;
+     width: 124px;
+     font-size: 14px;
+     font-weight: 600;
+     margin-right: 24px;
+     line-height: 24px;
+     text-align: left;
+     margin-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+   }
+
+   li{
+    // max-width: 70;
+    max-height: 48px;
+    height: 48px;
+    margin-left: 4px;
+    line-height: 1.2;
+    text-align: left;
+    a{
+      display: inline-block;
+      width: 70px;
+      
+      vertical-align: middle;
+      font-size: 14px;
+      &:hover{
+        color: #cc9756;
+      }
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+    }
+   }
+ }
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  display: none;
 }

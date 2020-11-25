@@ -525,15 +525,25 @@
     font-size: 12px; }
 
 #nav {
-  margin-top: 30px;
-  box-sizing: border-box; }
-  #nav .nav a {
-    font-size: 14px;
-    padding: 0 22px;
-    font-weight: 600;
-    padding-bottom: 7px; }
-    #nav .nav a:hover {
-      color: #cc9756;
-      border-bottom: 3px solid #cc9756; }
-  #nav .nav .line {
-    border-right: 1px solid #c9c9c9; }
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 50; }
+  #nav .line {
+    height: 30px; }
+  #nav .nav {
+    line-height: 30px; }
+    #nav .nav a {
+      font-size: 14px;
+      padding: 0 22px;
+      font-weight: 600;
+      padding-bottom: 7px; }
+      #nav .nav a:hover {
+        color: #cc9756;
+        border-bottom: 3px solid #cc9756; }
+    #nav .nav .line {
+      border-right: 1px solid #c9c9c9; }
+
+.container {
+  width: 1090px;
+  margin: 0 auto; }

@@ -628,9 +628,16 @@
 
 //导航栏
 #nav{
-  margin-top: 30px;
+  width: 100%;
   box-sizing: border-box;
+  background: #fff;
+  z-index: 50;
+  .line{
+    height: 30px;
+   }
   .nav{
+    // margin-top: 30px;
+    line-height: 30px;
     a{
       font-size: 14px;
       padding: 0 22px;
@@ -644,6 +651,11 @@
     .line{
       border-right: 1px solid #c9c9c9;
     }
+    
   }
 
+}
+.container{
+  width: 1090px;
+  margin:  0 auto;
 }

@@ -19,6 +19,8 @@ var sli = document.querySelector('.sli')
 var log = document.querySelectorAll('.log')
 var tab = document.querySelectorAll('.tab')
 var tit = document.querySelector('.tit');
+var nav = document.querySelector('#nav');
+var navs = document.querySelector('.nav');
 var phonelogin = document.querySelector('.bigbox .s-left')
 var emaillogin = document.querySelector('.bigbox .s-right')
 var userlogin = document.querySelector('.bigbox .content p')
@@ -136,20 +138,19 @@ emaillogin.onclick = function(){
     emaillogin.style.color = '#333'
     zlog.style.display = 'block'
 }
+
+//切换账号登录
 userlogin.onclick = function(){
     var passVal = emailpass.value;
     con.removeChild(sli);
     con.removeChild(checkbox);
     userlogin.innerText = '短信快捷登录'
-   
     var reipt = document.createElement('div')
     reipt.innerHTML ='<div class="icon3 logoimg3"></div><input type="password" placeholder="请输入密码">'
     reipt.className = 'inputbox3'
     btn1.innerText = '登录'
     con.replaceChild(reipt,test)
 }
-
-//切换账号登录
 
 //显示隐藏
 li.onclick = function () {
@@ -161,3 +162,13 @@ close1.onclick = function () {
     box.style.display = 'none'
 }
 
+//导航栏吸顶效果
+window.onscroll = function(){
+    var stop = document.documentElement.scrollTop || document.body.scrollTop;
+    if(stop >= 152){
+        nav.style.position = 'fixed';
+        nav.style.top = 0;
+    }else{
+        nav.style.position= 'static';
+    }
+}

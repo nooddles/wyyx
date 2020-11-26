@@ -198,8 +198,8 @@ on(lis2,'click','img',function(){
 
 boxMask.onmousemove = function(eve){
     var e = eve || event;
-    var maskLeft = e.clientX - offset(minBox).left - boxMask.clientWidth/2
-    var maskTop = e.clientY - offset(minBox).top - boxMask.clientHeight/2
+    var maskLeft = e.clientX - offset(minBox).left - boxMask.clientWidth/2 
+    var maskTop = e.clientY - offset(minBox).top - boxMask.clientHeight/2 +document.documentElement.scrollTop
 
     //限制mask移动范围
     if(maskLeft < 0){

@@ -4,59 +4,60 @@
     width: 100%;
     height: 420px; }
 
-#chose {
+.chose {
   height: 510px;
   margin-top: 30px;
   position: relative; }
-  #chose .intro {
+  .chose .intro {
     padding-bottom: 20px; }
-    #chose .intro .new {
+    .chose .intro .new {
       float: left; }
-      #chose .intro .new a {
+      .chose .intro .new a {
         font-size: 28px;
         font-weight: 700;
         line-height: 1;
         float: left;
         margin-right: 20px; }
-      #chose .intro .new span {
+      .chose .intro .new span {
         padding-top: 13px;
         display: inline-block;
         font-size: 14px;
         line-height: 1; }
-    #chose .intro .more {
+    .chose .intro .more {
       float: right; }
-      #chose .intro .more a {
+      .chose .intro .more a {
         display: inline-block;
         line-height: 1;
         margin-left: 30px;
         padding-top: 14px;
         font-size: 14px; }
-  #chose .swiper-container {
+  .chose .swiper-container {
+    margin-top: 30px;
     width: 1090px;
-    height: 520px; }
-  #chose .shop {
+    height: 450px; }
+  .chose .shop {
     width: 265px;
     margin-right: 10px; }
-    #chose .shop .good {
+    .chose .shop .good {
       width: 265px;
       height: 265px;
       overflow: hidden; }
-      #chose .shop .good:hover .goodimg1 {
+      .chose .shop .good:hover .goodimg1 {
         display: none; }
-      #chose .shop .good .goodimg2 {
+      .chose .shop .good .goodimg2 {
         width: 265px;
         height: 265px; }
-        #chose .shop .good .goodimg2 img {
+        .chose .shop .good .goodimg2 img {
           width: 100%;
           height: 100%; }
-    #chose .shop .bd {
+    .chose .shop .bd {
       text-align: center; }
-      #chose .shop .bd .part {
+      .chose .shop .bd .part {
         height: 20px;
         color: #ffffff;
         width: 200px;
         margin: 0 auto 3px; }
-        #chose .shop .bd .part span {
+        .chose .shop .bd .part span {
           height: 20px;
           line-height: 20px;
           color: #ffffff;
@@ -64,25 +65,25 @@
           background-color: #e36844;
           display: inline-block;
           font-size: 12px; }
-      #chose .shop .bd .name {
+      .chose .shop .bd .name {
         width: 166px;
         margin: 0 auto 4px;
         max-height: 40px;
         line-height: 20px;
         display: block;
         overflow: hidden; }
-        #chose .shop .bd .name a {
+        .chose .shop .bd .name a {
           font-size: 14px; }
-      #chose .shop .bd .pri {
+      .chose .shop .bd .pri {
         padding: 1px 0 9px;
         font-size: 13px;
         line-height: 13px;
         color: #d4282d;
         margin: 0; }
-        #chose .shop .bd .pri .countpri {
+        .chose .shop .bd .pri .countpri {
           font-size: 12px;
           color: #999999; }
-  #chose .selllist {
+  .chose .selllist {
     width: 110px;
     position: absolute;
     border: 1px solid #E2DED6;
@@ -98,7 +99,7 @@
     opacity: 1;
     will-change: transform;
     transform: translateZ(0); }
-    #chose .selllist .hots {
+    .chose .selllist .hots {
       font-size: 16px;
       color: #BB3343;
       text-align: center;
@@ -110,7 +111,7 @@
       cursor: default;
       padding: 0;
       background: url(https://yanxuan.nosdn.127.net/7c1853dd59b79d823ad3c4f3a0330049.png); }
-    #chose .selllist li {
+    .chose .selllist li {
       width: 108px;
       height: 36px;
       padding-left: 1px 11px 0;
@@ -120,13 +121,15 @@
       cursor: pointer;
       border-bottom: 1px solid #E2DED6;
       box-sizing: border-box; }
-      #chose .selllist li img {
+      .chose .selllist li:hover span {
+        color: #d4282d; }
+      .chose .selllist li img {
         position: absolute;
         top: 2px;
         left: 12px;
         width: 30px;
         height: 30px; }
-      #chose .selllist li span {
+      .chose .selllist li span {
         vertical-align: middle;
         display: table-cell;
         width: 40px;
@@ -135,12 +138,12 @@
         font-size: 12px;
         padding-left: 36px;
         padding-right: 20px; }
-  #chose .consult {
+  .chose .consult {
     display: block;
     position: absolute;
     top: 13px;
     right: -180px; }
-    #chose .consult a {
+    .chose .consult a {
       display: block;
       padding-top: 0;
       width: 72px;
@@ -152,16 +155,16 @@
       cursor: pointer;
       position: relative;
       border-bottom: solid 1px #999; }
-      #chose .consult a img {
+      .chose .consult a img {
         width: 70px;
         height: 70px; }
-      #chose .consult a .txt1 {
+      .chose .consult a .txt1 {
         line-height: 17px;
         color: #666; }
-      #chose .consult a .txt2 {
+      .chose .consult a .txt2 {
         line-height: 17px;
         color: #BC3B3B; }
-    #chose .consult .sub {
+    .chose .consult .sub {
       display: block;
       height: 78px;
       width: 72px;
@@ -173,21 +176,23 @@
       position: relative;
       padding-top: 14px;
       border-bottom: solid 1px #999; }
-      #chose .consult .sub:hover .book {
+      .chose .consult .sub:hover .book {
         display: block; }
-      #chose .consult .sub:hover {
+      .chose .consult .sub:hover {
         color: #b4a078; }
-      #chose .consult .sub .wifi {
+      .chose .consult .sub:hover .wifi {
+        background-position: 0 -455px; }
+      .chose .consult .sub .wifi {
         display: block;
         background-position: 0 -527px;
         margin-left: 25px;
         height: 26px;
         width: 26px; }
-      #chose .consult .sub p {
+      .chose .consult .sub p {
         line-height: 20px;
         font-size: 14px;
         margin: 8px auto 0; }
-      #chose .consult .sub .book {
+      .chose .consult .sub .book {
         position: absolute;
         top: -37px;
         right: 49px;
@@ -197,14 +202,14 @@
         cursor: default;
         line-height: 20px;
         display: none; }
-        #chose .consult .sub .book .yx-main {
+        .chose .consult .sub .book .yx-main {
           width: 370px;
           height: 220px;
           background: #fff;
           border: 1px solid #EAEAEA;
           box-shadow: 0 2px 4px #7f7f7f;
           position: relative; }
-          #chose .consult .sub .book .yx-main .yx-head {
+          .chose .consult .sub .book .yx-main .yx-head {
             background: url(https://yanxuan.nosdn.127.net/86fe9b8317068538cda05d96768a6e17.png?imageView&type=webp);
             height: 70px;
             text-align: center;
@@ -213,17 +218,17 @@
             color: #fff;
             margin-top: -1px;
             margin-left: -1px; }
-          #chose .consult .sub .book .yx-main .yx-body .yx-desc {
+          .chose .consult .sub .book .yx-main .yx-body .yx-desc {
             font-size: 14px;
             color: #999;
             text-align: center;
             margin-top: 20px; }
-          #chose .consult .sub .book .yx-main .yx-body .iptbox {
+          .chose .consult .sub .book .yx-main .yx-body .iptbox {
             width: 286px;
             height: 34px;
             margin: 10px auto 0;
             box-sizing: border-box; }
-            #chose .consult .sub .book .yx-main .yx-body .iptbox input {
+            .chose .consult .sub .book .yx-main .yx-body .iptbox input {
               width: 206px;
               height: 34px;
               padding: 5px 10px;
@@ -232,7 +237,7 @@
               border: 1px solid #DDD;
               border-right: none;
               box-sizing: border-box; }
-            #chose .consult .sub .book .yx-main .yx-body .iptbox button {
+            .chose .consult .sub .book .yx-main .yx-body .iptbox button {
               width: 80px;
               height: 34px;
               font-size: 14px;
@@ -243,36 +248,36 @@
               border: none;
               vertical-align: top;
               cursor: pointer; }
-          #chose .consult .sub .book .yx-main .yx-foot {
+          .chose .consult .sub .book .yx-main .yx-foot {
             margin-top: 31px;
             overflow: hidden;
             line-height: 1; }
-            #chose .consult .sub .book .yx-main .yx-foot .yx-icon {
+            .chose .consult .sub .book .yx-main .yx-foot .yx-icon {
               width: 122px;
               float: left; }
-              #chose .consult .sub .book .yx-main .yx-foot .yx-icon span {
+              .chose .consult .sub .book .yx-main .yx-foot .yx-icon span {
                 font-size: 14px;
                 color: #B4A078;
                 padding-left: 3px; }
-              #chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic1 {
+              .chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic1 {
                 display: inline-block;
                 vertical-align: top;
                 background-position: 0 -563px;
                 height: 14px;
                 width: 14px; }
-              #chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic2 {
+              .chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic2 {
                 display: inline-block;
                 vertical-align: top;
                 background-position: 0 -24px;
                 height: 12px;
                 width: 14px; }
-              #chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic3 {
+              .chose .consult .sub .book .yx-main .yx-foot .yx-icon .ic3 {
                 display: inline-block;
                 vertical-align: top;
                 background-position: 0 -431px;
                 height: 14px;
                 width: 14px; }
-    #chose .consult .online {
+    .chose .consult .online {
       display: block;
       width: 72px;
       height: 82px;
@@ -282,15 +287,166 @@
       line-height: 1;
       cursor: pointer;
       padding-top: 14px; }
-      #chose .consult .online .ic4 {
+      .chose .consult .online:hover {
+        color: #B4A078; }
+      .chose .consult .online:hover .ic4 {
+        background-position: 0 -46px; }
+      .chose .consult .online .ic4 {
         display: inline-block;
         background-position: 0 -128px;
         height: 31px;
         width: 32px; }
-      #chose .consult .online p {
+      .chose .consult .online p {
         line-height: 20px;
         font-size: 14px;
         margin: 8px auto 0; }
+
+#suggestion {
+  background: #f4f0ea;
+  cursor: pointer;
+  padding: 60px 0; }
+  #suggestion .g-row {
+    width: 1090px;
+    margin-left: auto;
+    margin-right: auto; }
+    #suggestion .g-row .commonHeader {
+      padding-bottom: 20px; }
+      #suggestion .g-row .commonHeader .f-left {
+        float: left; }
+        #suggestion .g-row .commonHeader .f-left h3 {
+          float: left;
+          font-size: 28px;
+          line-height: 1;
+          font-weight: 700;
+          margin-right: 20px; }
+        #suggestion .g-row .commonHeader .f-left .commontab {
+          float: left;
+          padding-left: 13px; }
+          #suggestion .g-row .commonHeader .f-left .commontab ul li {
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            width: 70px;
+            height: 28px;
+            line-height: 28px;
+            margin-right: 55px; }
+            #suggestion .g-row .commonHeader .f-left .commontab ul li:hover a {
+              color: #b4a078; }
+      #suggestion .g-row .commonHeader .f-right {
+        float: right; }
+        #suggestion .g-row .commonHeader .f-right a {
+          display: inline-block;
+          line-height: 1;
+          margin-left: 30px;
+          padding-top: 14px;
+          cursor: pointer;
+          font-size: 14px; }
+  #suggestion .showContainer {
+    margin-top: 20px; }
+    #suggestion .showContainer .m-product:first-child {
+      width: 390px;
+      height: 570px;
+      margin-left: 0;
+      background-color: #fff;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      line-height: 1;
+      font-size: 13px; }
+      #suggestion .showContainer .m-product:first-child .hd {
+        margin-bottom: 18px;
+        border-bottom: 1px solid #F4F0EA; }
+        #suggestion .showContainer .m-product:first-child .hd .goodsimg {
+          width: 100%;
+          height: 100%; }
+          #suggestion .showContainer .m-product:first-child .hd .goodsimg img {
+            width: 320px;
+            height: 320px;
+            margin: 40px 35px; }
+      #suggestion .showContainer .m-product:first-child .bd .prdtTags {
+        height: 20px;
+        color: #fff;
+        width: 200px;
+        margin: 0 auto 3px;
+        overflow: hidden; }
+        #suggestion .showContainer .m-product:first-child .bd .prdtTags span {
+          height: 20px;
+          line-height: 20px;
+          color: #fff;
+          padding: 0 5px;
+          background-color: #e36844; }
+      #suggestion .showContainer .m-product:first-child .bd .goodsname {
+        line-height: 26px;
+        max-height: 52px;
+        margin: 0 auto 13px;
+        font-size: 18px;
+        width: 248px; }
+      #suggestion .showContainer .m-product:first-child .bd .total {
+        line-height: 13px;
+        color: #d4282d;
+        padding: 1px 0 9px; }
+        #suggestion .showContainer .m-product:first-child .bd .total .realPic {
+          font-size: 18px;
+          height: 18px;
+          line-height: 1; }
+        #suggestion .showContainer .m-product:first-child .bd .total .counPic {
+          font-size: 14px;
+          color: #999; }
+    #suggestion .showContainer .m-product {
+      background-color: #fff;
+      overflow: hidden;
+      width: 223px;
+      height: 280px;
+      float: left;
+      margin-left: 10px;
+      text-align: center;
+      margin-top: 5px; }
+      #suggestion .showContainer .m-product .hd {
+        background: 0 0;
+        border-bottom: 1px solid #F4F0EA;
+        position: relative;
+        margin-bottom: 8px;
+        overflow: hidden; }
+        #suggestion .showContainer .m-product .hd .goodsimg {
+          width: 100%;
+          height: 100%; }
+          #suggestion .showContainer .m-product .hd .goodsimg img {
+            width: 180px;
+            height: 180px; }
+      #suggestion .showContainer .m-product .bd .prdtTags {
+        height: 20px;
+        color: #fff;
+        width: 200px;
+        margin: 0 auto 3px;
+        overflow: hidden; }
+        #suggestion .showContainer .m-product .bd .prdtTags span {
+          height: 20px;
+          line-height: 20px;
+          color: #fff;
+          padding: 0 5px;
+          background-color: #e36844; }
+      #suggestion .showContainer .m-product .bd .goodsname {
+        width: 136px;
+        margin: 0 auto 4px;
+        max-height: 40px;
+        line-height: 20px;
+        overflow: hidden; }
+      #suggestion .showContainer .m-product .bd .total {
+        font-size: 13px;
+        line-height: 13px;
+        color: #d4282d;
+        padding: 1px 0 9px;
+        margin: 0; }
+        #suggestion .showContainer .m-product .bd .total .realPic {
+          position: relative;
+          top: 1px;
+          line-height: 13px;
+          height: 13px;
+          padding: 0; }
+        #suggestion .showContainer .m-product .bd .total .counPic {
+          font-size: 12px;
+          color: #999;
+          top: 2px; }
 
 .swiper-button-next, .swiper-button-prev {
   top: 170px; }

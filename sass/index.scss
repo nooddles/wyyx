@@ -7,7 +7,7 @@
   height: 420px;
  }
 }
-#chose{
+.chose{
   height: 510px;
   margin-top: 30px;
   position: relative;
@@ -41,8 +41,9 @@
     }
   }
   .swiper-container {
+    margin-top: 30px;
     width:1090px;
-    height: 520px;
+    height: 450px;
   }  
   .shop{
     width: 265px;
@@ -143,6 +144,9 @@
        cursor: pointer;
        border-bottom: 1px solid #E2DED6;
        box-sizing: border-box;
+       &:hover span{
+        color: #d4282d;
+       }
        img{
          position: absolute;
          top: 2px;
@@ -210,6 +214,9 @@
       }
       &:hover{
         color: #b4a078;
+      }
+      &:hover .wifi{
+        background-position: 0 -455px;
       }
       .wifi{
         display: block;
@@ -335,6 +342,12 @@
        line-height: 1;
        cursor: pointer;
        padding-top: 14px;
+       &:hover{
+         color: #B4A078;
+       }
+       &:hover .ic4{
+         background-position: 0 -46px;
+       }
        .ic4{
          display: inline-block;
          background-position: 0 -128px;
@@ -345,11 +358,196 @@
          line-height: 20px;
          font-size: 14px;
          margin: 8px auto 0;
-
        }
      }
     }
  }
+
+#suggestion{
+  background: #f4f0ea;
+  cursor: pointer;
+  padding: 60px 0;
+ .g-row{
+   width: 1090px;
+   margin-left: auto;
+   margin-right: auto;
+   .commonHeader{
+    padding-bottom: 20px;
+    .f-left{
+      float: left;
+      h3{
+        float: left;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 700;
+        margin-right: 20px;
+      }
+      .commontab{
+        float: left;
+        padding-left: 13px;
+        ul{
+         li{
+          float: left;
+          text-align: center;
+          font-size: 14px;
+          width: 70px;
+          height: 28px;
+          line-height: 28px;
+          margin-right: 55px;
+          &:hover a{
+            color: #b4a078;
+          }
+        }
+        }
+      }
+    }
+    .f-right{
+      float: right;
+      a{
+        display: inline-block;
+        line-height: 1;
+        margin-left: 30px;
+        padding-top: 14px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+   }
+ }
+  .showContainer{
+    margin-top: 20px;
+    .m-product:first-child{
+      width: 390px;
+     height: 570px;
+      margin-left: 0;
+      background-color: #fff;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      line-height: 1;
+      font-size: 13px;
+      .hd{
+        margin-bottom: 18px;
+        border-bottom: 1px solid #F4F0EA;
+        .goodsimg{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 320px;
+            height: 320px;
+            margin: 40px 35px;
+          }
+        }
+      }
+     
+      .bd{
+        .prdtTags{
+          height: 20px;
+          color: #fff;
+          width: 200px;
+          margin: 0 auto 3px;
+          overflow: hidden;
+          span{
+            height: 20px;
+            line-height: 20px;
+            color: #fff;
+            padding: 0 5px;
+            background-color: #e36844;
+          }
+        }
+        .goodsname{
+          line-height: 26px;
+          max-height: 52px;
+          margin: 0 auto 13px;
+          font-size: 18px;
+          width: 248px;
+        }
+        .total{
+          line-height: 13px;
+          color: #d4282d;
+          padding: 1px 0 9px;
+          .realPic{
+            font-size: 18px;
+            height: 18px;
+            line-height: 1;
+          }
+          .counPic{
+            font-size: 14px;
+            color: #999;
+          }
+        }
+      }
+    }
+    .m-product{
+      background-color: #fff;
+      overflow: hidden;
+      width: 223px;
+      height: 280px;
+      float: left;
+      margin-left: 10px;
+      text-align: center;
+      margin-top: 5px;
+      .hd{
+        background: 0 0;
+      border-bottom: 1px solid #F4F0EA;
+      position: relative;
+      margin-bottom: 8px;
+      overflow: hidden;
+      .goodsimg{
+        width: 100%;
+        height: 100%;
+        img{
+          width: 180px;
+          height: 180px;
+        }
+      }
+      }
+      .bd{
+        .prdtTags{
+          height: 20px;
+          color: #fff;
+          width: 200px;
+          margin: 0 auto 3px;
+          overflow: hidden;
+          span{
+            height: 20px;
+            line-height: 20px;
+            color: #fff;
+            padding: 0 5px;
+            background-color: #e36844;
+          }   
+        }
+          .goodsname{
+            width: 136px;
+            margin: 0 auto 4px;
+            max-height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+          }
+          .total{
+            font-size: 13px;
+            line-height: 13px;
+            color: #d4282d;
+            padding: 1px 0 9px;
+            margin: 0;
+            .realPic{
+              position: relative;
+              top: 1px;
+              line-height: 13px;
+              height: 13px;
+              padding: 0;
+            }
+            .counPic{
+              font-size: 12px;
+              color: #999;
+              top: 2px;
+            }
+          }
+     
+      }
+    }
+  }
+}
 
 
 .swiper-button-next, .swiper-button-prev{

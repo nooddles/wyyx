@@ -69,12 +69,23 @@
     padding-bottom: 20px; }
   #goods .m-slide {
     float: left; }
-    #goods .m-slide .minbox {
+    #goods .m-slide .minBox {
       width: 430px;
       height: 430px;
       float: left;
-      z-index: 99;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative;
+      z-index: 33; }
+      #goods .m-slide .minBox .boxMask {
+        width: 250px;
+        height: 250px;
+        background: #b4a078;
+        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        cursor: move;
+        display: none; }
     #goods .m-slide .list2 {
       position: relative;
       margin-top: 14px; }
@@ -347,10 +358,20 @@
           line-height: 23px;
           color: #999;
           cursor: pointer; }
-  #goods .maxbox {
+  #goods .maxxBox {
     overflow: hidden;
-    width: 600px;
-    height: 600px;
+    width: 430px;
+    height: 430px;
     position: absolute;
     top: 52px;
-    left: 440px; }
+    left: 440px;
+    display: none; }
+    #goods .maxxBox .maxBox {
+      width: 600px;
+      height: 600px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+
+.index {
+  z-index: 99; }

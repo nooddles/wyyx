@@ -293,4 +293,34 @@ function removeCookie(key) {
     val: '123',
     days: -2
   });
+} // 获取元素到最外层定位父级的距离
+
+
+function offset(dom, bool) {
+  var t = 0,
+      l = 0;
+  var bdl = dom.clientLeft; // 保存当前元素的左边框
+
+  var bdt = dom.clientTop; // 保存当前元素的上边框
+
+  while (dom) {
+    l += dom.offsetLeft + dom.clientLeft;
+    t += dom.offsetTop + dom.clientTop; // 每次循环完让当前dom元素等于他的定位父级
+
+    dom = dom.offsetParent;
+  }
+
+  if (bool) {
+    // 包含自身边框
+    return {
+      left: l,
+      top: t
+    };
+  } else {
+    // 不包含自身边框
+    return {
+      left: l - bdl,
+      top: t - bdt
+    };
+  }
 }

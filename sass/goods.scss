@@ -81,14 +81,25 @@
     padding-bottom: 20px;
   }
   .m-slide{
-    float: left;
-   
-    .minbox{
+    float: left;  
+    .minBox{
       width: 430px;
       height: 430px;
       float: left;
-      z-index: 99;
       overflow: hidden;
+      position: relative;
+      z-index: 33;
+      .boxMask{
+        width: 250px;
+        height: 250px;
+        background:#b4a078;
+        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        cursor: move;
+        display: none;
+      }
     }
     .list2{
       position: relative;
@@ -422,12 +433,23 @@
       }
     }
   }
-  .maxbox{
+  .maxxBox{
     overflow: hidden;
-    width: 600px;
-    height: 600px;
+    width: 430px;
+    height: 430px;
     position: absolute;
     top: 52px;
     left: 440px;
+    display: none;
+    .maxBox{
+          width: 600px;
+          height: 600px;
+          position: absolute;
+          left: 0;
+          top: 0;
+    }
   }
+}
+.index{
+  z-index: 99;
 }

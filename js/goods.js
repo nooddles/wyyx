@@ -178,8 +178,12 @@ window.onscroll = function(){
 //选项卡切换
 var cut = document.querySelectorAll('.list2 ul li a img')
 var lis2 = document.querySelector('.list2 ul')
-var imgs =  document.querySelectorAll('.minbox img')
-var maximg =  document.querySelectorAll('.maxbox img')
+var imgs =  document.querySelectorAll('.minBox img')
+var maximg =  document.querySelectorAll('.maxBox img')
+var boxMask = document.querySelector('.minBox .boxMask')
+var minBox = document.querySelector('.minBox')
+var maxBox = document.querySelector('.maxBox')
+var maxxBox = document.querySelector('.maxxBox')
 
 on(lis2,'click','img',function(){
     for(var i = 0,len = cut.length; i <len; i++){
@@ -191,3 +195,40 @@ on(lis2,'click','img',function(){
     imgs[this.getAttribute('index')].style.display = 'block';
     maximg[this.getAttribute('index')].style.display='block';
 })
+
+boxMask.onmousemove = function(eve){
+    var e = eve || event;
+    var maskLeft = e.clientX - offset(minBox).left - boxMask.clientWidth/2
+    var maskTop = e.clientY - offset(minBox).top - boxMask.clientHeight/2
+
+    //限制mask移动范围
+    if(maskLeft < 0){
+        maskLeft = 0
+    }
+    if(maskLeft >= (minBox.clientWidth- boxMask.clientWidth))  {
+        maskLeft = minBox.clientWidth - boxMask.clientWidth
+    }
+    if(maskTop < 0){
+        maskTop = 0
+    }
+    if(maskTop >= (minBox.clientHeight - boxMask.clientHeight)){
+        maskTop = minBox.clientHeight - boxMask.clientHeight
+    }
+    boxMask.style.left = maskLeft +'px'
+    boxMask.style.top = maskTop + 'px'
+
+    var scaleX = maskLeft/(minBox.clientWidth - boxMask.clientWidth)
+    var scaleY = maskTop/(minBox.clientHeight - boxMask.clientHeight)
+
+    maxBox.style.left = -scaleX*(maxBox.clientWidth - maxxBox.clientWidth) + 'px'
+    maxBox.style.top = -scaleY*(maxBox.clientHeight - maxxBox.clientHeight) + 'px'
+   
+}
+minBox.onmouseenter = function(){
+    boxMask.style.display = 'block'
+    maxxBox.style.display = 'block'
+}
+minBox.onmouseleave = function(){
+    boxMask.style.display = 'none'
+    maxxBox.style.display = 'none'
+}

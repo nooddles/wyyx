@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <!-- <link rel="stylesheet" href=""> -->
 </head>
@@ -78,13 +79,13 @@
           </div>
           <div class="testing">
             <div class="iptb">
-              <input type="text"  placeholder="请输入短信验证码" maxlength="6" data-max-length="6">
+              <input type="text" placeholder="请输入短信验证码" maxlength="6" data-max-length="6">
             </div>
             <i>获取验证码</i>
           </div>
           <button class="btn1">手机号快捷登录</button>
           <div class="check">
-            <input type="checkbox" ><span>我同意《服务条款》和《网易隐私政策》</span>
+            <input type="checkbox"><span>我同意《服务条款》和《网易隐私政策》</span>
           </div>
           <div class="other">
             <ul>
@@ -100,7 +101,7 @@
         <div class="log">
           <div class="inputbox2">
             <div class="icon3 logoimg2"></div>
-            <input type="text"  placeholder="邮箱账号">
+            <input type="text" placeholder="邮箱账号">
           </div>
           <div class="inputbox3">
             <div class="icon3 logoimg3"></div>
@@ -135,7 +136,7 @@
       <p class="size"><i class="img icon"></i>购物车</p><span class="icon circle">0</span>
     </div>
   </div>
-  
+
   <!-- 网页导航 -->
   <div id="nav" class=>
     <div class="line"></div>
@@ -152,175 +153,211 @@
       <a href="javascript:;">为你严选</a>
       <a href="javascript:;">众筹</a>
       <div class="goodslist">
-          <ul>
-            <h3>家具家装</h3>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">客餐厅家具</a>
-            </li>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">卧室家具</a>
-            </li>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">办公书房家具</a>
-            </li>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">小件家具</a>
-            </li>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">灯具</a>
-            </li>
-            <li>
-              <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-              <a href="javascript:;">地毯窗帘</a>
-            </li>
-            </ul>
-            <ul>
-              <h3>家具家装</h3>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">客餐厅家具</a>
-              </li>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">卧室家具</a>
-              </li>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">办公书房家具</a>
-              </li>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">小件家具</a>
-              </li>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">灯具</a>
-              </li>
-              <li>
-                <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-                <a href="javascript:;">地毯窗帘</a>
-              </li>
-              </ul>
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
 
-              <ul>
-                <h3>家具家装</h3>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">客餐厅家具</a>
-                </li>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">卧室家具</a>
-                </li>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">办公书房家具</a>
-                </li>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">小件家具</a>
-                </li>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">灯具</a>
-                </li>
-                <li>
-                  <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-                  <a href="javascript:;">地毯窗帘</a>
-                </li>
-                </ul>
-                <ul>
-                  <h3>家具家装</h3>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">客餐厅家具</a>
-                  </li>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">卧室家具</a>
-                  </li>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">办公书房家具</a>
-                  </li>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">小件家具</a>
-                  </li>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">灯具</a>
-                  </li>
-                  <li>
-                    <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-                    <a href="javascript:;">地毯窗帘</a>
-                  </li>
-                  </ul>
-                  <ul>
-                    <h3>家具家装</h3>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">客餐厅家具</a>
-                    </li>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">卧室家具</a>
-                    </li>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">办公书房家具</a>
-                    </li>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">小件家具</a>
-                    </li>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">灯具</a>
-                    </li>
-                    <li>
-                      <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-                      <a href="javascript:;">地毯窗帘</a>
-                    </li>
-                    </ul>
-                    <ul>
-                      <h3>家具家装</h3>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">客餐厅家具</a>
-                      </li>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">卧室家具</a>
-                      </li>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">办公书房家具</a>
-                      </li>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">小件家具</a>
-                      </li>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">灯具</a>
-                      </li>
-                      <li>
-                        <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView" alt="">
-                        <a href="javascript:;">地毯窗帘</a>
-                      </li>
-                      </ul>
-                       
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
+        <ul>
+          <h3>家具家装</h3>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/e8e017d7b6d53abdbcfc2b4d9d464f7f.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">客餐厅家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/b96c03936142b1ccbbf57144a1bec8ef.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">卧室家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/51b15acb5aadf019452a1543b430912e.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">办公书房家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/f44e2cb4a1250b1dbcb59aecd6de699b.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">小件家具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/1853975628f115fcfafed57403e02e14.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">灯具</a>
+          </li>
+          <li>
+            <img src="https://yanxuan.nosdn.127.net/4b99e46ac5ed04560d3afc799fe1a471.png?quality=95&type=webp&imageView"
+              alt="">
+            <a href="javascript:;">地毯窗帘</a>
+          </li>
+        </ul>
+
       </div>
     </div>
-      
-      
-   
+
+
+
 
   </div>
   <div id="banner">
@@ -331,66 +368,381 @@
     </a>
   </div>
 
-  <!-- 客户服务 -->
-  <div id="client" class="container clearfix">
-    <div class="left">
-      <h2>客户服务</h2>
-      <div class="service">
-        <a href=""><div class="icon4 simg1"></div><span>在线客服</span></a>
-        <a href=""><div class="icon4 simg2"></div><span>用户反馈</span></a>
-      </div>
-    </div>
-    <div class="middle">
-      <h2>何为严选</h2>
-      <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
-      <div class="hot">
-        <ul>
-          <li>关注我们 :</li>
-          <li><i class="icon4"></i><div class="ewm1"><img src="https://yanxuan.nosdn.127.net/a3652c6bd3723412fe5099aea1502e50.png?type=webp&imageView&quality=95" alt="" ></div></li>
-          <li><span class="icon4"></span><div class="ewm2"><img src="https://yanxuan.nosdn.127.net/a3652c6bd3723412fe5099aea1502e50.png?type=webp&imageView&quality=95" alt="" ></div></li>
-          <li><a href="" class="icon4"></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <h2>扫描下载严选APP</h2>
-      <img src="./img/ewm.png" alt="">
-      <p>下载领大额新人红包</p>
-    </div>
-  </div>
 
-<!-- 底部 -->
-  <div id="footer">
-    <div class=" container">
-      <div class="promise clearfix">
-        <ul class="clearfix">
-          <li><div class="icon4 ic1"></div><h2>网易自营电商</h2></li>
-          <li class="mar"><div class="icon4 ic2"></div><h2>30天无忧退换货</h2></li>
-          <li class="mal"><div class="icon4 ic3"></div><h2>满99元免邮费</h2></li>
-          <li><div class="icon4 ic4"></div><h2>品质保证</h2></li>
-        </ul>
+  <!-- 轮播图，网页导航 -->
+  <div id="chose" class="container">
+    <div class="intro">
+      <div class="new">
+        <a href="">新品首发</a>
+        <span>为你寻觅世间好物</span>
       </div>
-      <span></span>
-      <div class="ours">
-        <a href="">关于我们</a>
-        <span class="split"></span><a href="">帮助中心</a>
-        <span class="split"></span><a href="">售后服务</a>
-        <span class="split"></span><a href="">配送与验收</a>
-        <span class="split"></span><a href="">商务合作</a>
-        <span class="split"></span><a href="">企业采购</a>
-        <span class="split"></span><a href="">开放平台</a>
-        <span class="split"></span><a href="">搜索推荐</a>
-        <span class="split"></span><a href="">友情链接</a>
-        <span class="split"></span><a href="">廉正举报</a>
+      <div class="more">
+        <a href="">更多新品</a><i></i>
       </div>
-      <p><a href="">食品经营许可证：JY13301080111719</a><a href="">出版物经营许可证：新出发滨字第0132号妙得</a>ICP证号：ICP 证浙B2-20160106<a href="">浙杭食药监械经营备20171029号</a><a href="">营业执照</a>网易公司版权所有 © 1997-2020</p>
-      <p><a href="">无线电发射设备销售备案：42202011096855</a><a href="">（浙杭）网械企备字[2019]第00119号</a> （粤）网械平台备字（2019）第00004号（粤）-非经营性-2016-0023</p>
-      <p><a href="">浙江省网络食品销售第三方平台提供者备案：浙网食A33010009</a>单用途商业预付卡备案证：330100AAC0024<img src="https://yanxuan.nosdn.127.net/86f32b668af6e537389a77480fb5c74d.gif" alt=""></p>
     </div>
-  </div>
-  <div class="mask"></div>
-  <script src="./js/tool.js"></script>
-  <script src="./js/index.js"></script>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href="#"></a>
+              <div class="goodimg1">
+                <a href=""> <img
+                    src="https://yanxuan-item.nosdn.127.net/5aad81bd22e540dae6b6f34770692c04.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                    alt=""></div>
+              </a>
+              <div class="goodimg2">
+                <a href="">
+                  <img
+                    src="https://yanxuan-item.nosdn.127.net/9aea73d35d31b1afab3c4f073e8cbd1c.jpg?type=webp&quality=95&thumbnail=265x265&imageView"
+                    alt=""></div>
+              </a>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1"><img
+                  src="https://yanxuan-item.nosdn.127.net/ba62c3e6d451c07dbcd95b5325b352eb.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2"><img
+                  src="https://yanxuan-item.nosdn.127.net/eb06c0e1702588242cd35088b20e45f9.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1"><img
+                  src="https://yanxuan-item.nosdn.127.net/04aa3b8c1920183bf66a4fbaf236d3c0.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2"><img
+                  src="https://yanxuan-item.nosdn.127.net/603ce10d7ac735d3370f013e17902f05.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1">
+                <img
+                  src="https://yanxuan-item.nosdn.127.net/6e7d68d8d75bd2462b7ea76901920548.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2">
+                <img
+                  src="https://yanxuan-item.nosdn.127.net/9be0f0c16d7fbafacee94ecc2d995ee8.jpg?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1"><img
+                  src="https://yanxuan-item.nosdn.127.net/5aad81bd22e540dae6b6f34770692c04.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2"><img
+                  src="https://yanxuan-item.nosdn.127.net/9aea73d35d31b1afab3c4f073e8cbd1c.jpg?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1"><img
+                  src="https://yanxuan-item.nosdn.127.net/ba62c3e6d451c07dbcd95b5325b352eb.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2"><img
+                  src="https://yanxuan-item.nosdn.127.net/eb06c0e1702588242cd35088b20e45f9.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1"><img
+                  src="https://yanxuan-item.nosdn.127.net/04aa3b8c1920183bf66a4fbaf236d3c0.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2"><img
+                  src="https://yanxuan-item.nosdn.127.net/603ce10d7ac735d3370f013e17902f05.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="shop">
+            <div class="good">
+              <a href=""></a>
+              <div class="goodimg1">
+                <img
+                  src="https://yanxuan-item.nosdn.127.net/6e7d68d8d75bd2462b7ea76901920548.png?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+              <div class="goodimg2">
+                <img
+                  src="https://yanxuan-item.nosdn.127.net/9be0f0c16d7fbafacee94ecc2d995ee8.jpg?type=webp&quality=95&thumbnail=265x265&imageView"
+                  alt=""></div>
+            </div>
+            <div class="bd">
+              <div class="part"><span>新品限时购</span></div>
+              <h4 class="name"><a href="">2020年新果上市，南非碧根果仁 150克</a></h4>
+              <p class="pri">
+                <span class="retpri">￥39.9</span>
+                <span class="countpri">￥46</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <ul class="selllist">
+      <li class="hots">-热销榜-</li>
+      <li><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>全站热销榜</span>
+      </li>
+      <li><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>居家生活榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+      <li>
+        <img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png?quality=95&type=webp&imageView"
+          alt="">
+        <span>服饰鞋包榜</span>
+      </li>
+    </ul>
+    <div class="consult">
+      <a href="">
+        <img src="./img/ewm.png" alt="">
+        <p class="txt1">扫码领</p>
+        <p class="txt2">APP大额</p>
+        <p class="txt2">新人红包</p>
+      </a>
+      <div class="sub">
+        <i class="wifi icon5"></i>
+        <p>订阅电子刊</p>
+        <div class="book">
+          <div class="yx-main">
+            <div class="yx-head">严选生活美学</div>
+            <div class="yx-body">
+              <div class="yx-desc">
+                订阅电子刊，第一时间获取严选最新资讯
+              </div>
+              <div class="iptbox">
+              <input type="text" placeholder="请输入您的电子邮件"><button>立即订阅</button>
+              </div>
+            </div>
+            <div class="yx-foot">
+              <div class="yx-icon"><i class="icon5 ic1"></i><span>专属优惠</span></div>
+              <div class="yx-icon"><i class="icon5 ic2"></i><span>尊享优先购</span></div>
+              <div class="yx-icon"><i class="icon5 ic3"></i><span>好货不错过</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="online">
+        <i class="icon5 ic4"></i>
+        <p>在线客服</p>
+      </div>
+    </div>
+
+
+    <!-- 客户服务 -->
+    <div id="client" class="container clearfix">
+      <div class="left">
+        <h2>客户服务</h2>
+        <div class="service">
+          <a href="">
+            <div class="icon4 simg1"></div><span>在线客服</span>
+          </a>
+          <a href="">
+            <div class="icon4 simg2"></div><span>用户反馈</span>
+          </a>
+        </div>
+      </div>
+      <div class="middle">
+        <h2>何为严选</h2>
+        <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+        <div class="hot">
+          <ul>
+            <li>关注我们 :</li>
+            <li><i class="icon4"></i>
+              <div class="ewm1"><img
+                  src="https://yanxuan.nosdn.127.net/a3652c6bd3723412fe5099aea1502e50.png?type=webp&imageView&quality=95"
+                  alt=""></div>
+            </li>
+            <li><span class="icon4"></span>
+              <div class="ewm2"><img
+                  src="https://yanxuan.nosdn.127.net/a3652c6bd3723412fe5099aea1502e50.png?type=webp&imageView&quality=95"
+                  alt=""></div>
+            </li>
+            <li><a href="" class="icon4"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <h2>扫描下载严选APP</h2>
+        <img src="./img/ewm.png" alt="">
+        <p>下载领大额新人红包</p>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div id="footer">
+      <div class=" container">
+        <div class="promise clearfix">
+          <ul class="clearfix">
+            <li>
+              <div class="icon4 ic1"></div>
+              <h2>网易自营电商</h2>
+            </li>
+            <li class="mar">
+              <div class="icon4 ic2"></div>
+              <h2>30天无忧退换货</h2>
+            </li>
+            <li class="mal">
+              <div class="icon4 ic3"></div>
+              <h2>满99元免邮费</h2>
+            </li>
+            <li>
+              <div class="icon4 ic4"></div>
+              <h2>品质保证</h2>
+            </li>
+          </ul>
+        </div>
+        <span></span>
+        <div class="ours">
+          <a href="">关于我们</a>
+          <span class="split"></span><a href="">帮助中心</a>
+          <span class="split"></span><a href="">售后服务</a>
+          <span class="split"></span><a href="">配送与验收</a>
+          <span class="split"></span><a href="">商务合作</a>
+          <span class="split"></span><a href="">企业采购</a>
+          <span class="split"></span><a href="">开放平台</a>
+          <span class="split"></span><a href="">搜索推荐</a>
+          <span class="split"></span><a href="">友情链接</a>
+          <span class="split"></span><a href="">廉正举报</a>
+        </div>
+        <p><a href="">食品经营许可证：JY13301080111719</a><a href="">出版物经营许可证：新出发滨字第0132号妙得</a>ICP证号：ICP 证浙B2-20160106<a
+            href="">浙杭食药监械经营备20171029号</a><a href="">营业执照</a>网易公司版权所有 © 1997-2020</p>
+        <p><a href="">无线电发射设备销售备案：42202011096855</a><a href="">（浙杭）网械企备字[2019]第00119号</a>
+          （粤）网械平台备字（2019）第00004号（粤）-非经营性-2016-0023</p>
+        <p><a href="">浙江省网络食品销售第三方平台提供者备案：浙网食A33010009</a>单用途商业预付卡备案证：330100AAC0024<img
+            src="https://yanxuan.nosdn.127.net/86f32b668af6e537389a77480fb5c74d.gif" alt=""></p>
+      </div>
+    </div>
+    <div class="mask"></div>
+    <script src="./js/tool.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/swiper.min.js"></script>
+
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        // direction: 'vertical',
+        loop: false,
+
+        longSwipesRatio: 0.1,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      })        
+    </script>
+    </script>
 </body>
 
 </html>

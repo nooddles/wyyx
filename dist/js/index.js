@@ -188,4 +188,75 @@ window.onscroll = function () {
   } else {
     nav.style.position = 'static';
   }
+}; //轮播图数据请求
+
+
+var trunData = document.querySelector('.swiper-wrapper');
+ajax({
+  url: "./img/goods1.json",
+  type: "get",
+  dataType: 'json',
+  success: function success(json) {
+    var goodsStr = '';
+    json.forEach(function (item, index) {
+      goodsStr += "\n                <div class=\"swiper-slide\">\n                 <div class=\"shop\">\n                  <div class=\"good\">\n                    <a href=\"\"></a>\n                    <div class=\"goodimg1\"><img\n                        src=\"".concat(item.imgurl1, "\"\n                        alt=\"\"></div>\n                    <div class=\"goodimg2\"><img\n                        src=\"").concat(item.imgurl2, "\"\n                        alt=\"\"></div>\n                  </div>\n                  <div class=\"bd\">\n                    <div class=\"part\"><span>").concat(item.tit, "</span></div>\n                    <h4 class=\"name\"><a href=\"\">").concat(item.title, "</a></h4>\n                    <p class=\"pri\">\n                      <span class=\"retpri\">").concat(item.price1, "</span>\n                      <span class=\"countpri\">").concat(item.price2, "</span>\n                    </p>\n                  </div>\n                 </div>\n                </div>\n                ");
+    });
+    trunData.innerHTML = goodsStr;
+  }
+}); //推荐数据请求
+
+var suggestion = document.querySelector('.showContainer');
+var commonTab = document.querySelector('.commontab');
+var font = document.querySelectorAll('.commontab a');
+var topSell = document.querySelector('.commontab .topSell');
+var recommend = document.querySelector('.commontab .recommend');
+ajax({
+  url: './img/goods2.json',
+  type: 'get',
+  dataType: 'json',
+  success: function success(json) {
+    var goodsStr = '';
+    json.forEach(function (item, index) {
+      goodsStr += "\n                <div class=\"m-product\">\n                <div class=\"hd\">\n                  <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"".concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
+    });
+    suggestion.innerHTML = goodsStr;
+  }
+});
+
+topSell.onclick = function () {
+  ajax({
+    url: './img/goods3.json',
+    type: 'get',
+    dataType: 'json',
+    success: function success(json) {
+      var goodsStr = '';
+      json.forEach(function (item, index) {
+        goodsStr += "\n            <div class=\"m-product\">\n            <div class=\"hd\">\n              <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n              <div class=\"goodsimg\">\n                <img\n                  src=\"".concat(item.imgurl1, "\"\n                  alt=\"\">\n              </div>\n            </div>\n            <div class=\"bd\">\n              <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n              <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n              <p class=\"total\">\n                <span class=\"realPic\">").concat(item.price1, "</span>\n                <span class=\"counPic\">").concat(item.price2, "</span>\n              </p>\n            </div>\n          </div>\n            ");
+      });
+      suggestion.innerHTML = goodsStr;
+    }
+  });
 };
+
+recommend.onclick = function () {
+  ajax({
+    url: './img/goods2.json',
+    type: 'get',
+    dataType: 'json',
+    success: function success(json) {
+      var goodsStr = '';
+      json.forEach(function (item, index) {
+        goodsStr += "\n                <div class=\"m-product\">\n                <div class=\"hd\">\n                  <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"".concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
+      });
+      suggestion.innerHTML = goodsStr;
+    }
+  });
+};
+
+on(commonTab, 'click', 'a', function () {
+  for (var i = 0, len = font.length; i < len; i++) {
+    font[i].className = '';
+  }
+
+  this.className = 'click';
+});

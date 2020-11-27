@@ -172,3 +172,152 @@ window.onscroll = function(){
         nav.style.position= 'static';
     }
 }
+
+//轮播图数据请求
+var trunData = document.querySelector('.swiper-wrapper')
+    ajax({
+        url: "./img/goods1.json",
+        type: "get",
+        dataType: 'json',
+        success: function(json){
+            var goodsStr = ''
+            json.forEach(function(item,index){
+                goodsStr += `
+                <div class="swiper-slide">
+                 <div class="shop">
+                  <div class="good">
+                    <a href=""></a>
+                    <div class="goodimg1"><img
+                        src="${item.imgurl1}"
+                        alt=""></div>
+                    <div class="goodimg2"><img
+                        src="${item.imgurl2}"
+                        alt=""></div>
+                  </div>
+                  <div class="bd">
+                    <div class="part"><span>${item.tit}</span></div>
+                    <h4 class="name"><a href="">${item.title}</a></h4>
+                    <p class="pri">
+                      <span class="retpri">${item.price1}</span>
+                      <span class="countpri">${item.price2}</span>
+                    </p>
+                  </div>
+                 </div>
+                </div>
+                `
+             
+            })
+            trunData.innerHTML = goodsStr
+        }
+    })
+
+//推荐数据请求
+var suggestion = document.querySelector('.showContainer')
+var commonTab = document.querySelector('.commontab')
+var font = document.querySelectorAll('.commontab a')
+var topSell = document.querySelector('.commontab .topSell')
+var recommend = document.querySelector('.commontab .recommend')
+    ajax({
+        url : './img/goods2.json',
+        type: 'get',
+        dataType:'json',
+        success: function(json){
+           var goodsStr = ''
+            json.forEach(function(item,index){
+                goodsStr += `
+                <div class="m-product">
+                <div class="hd">
+                  <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+                  <div class="goodsimg">
+                    <img
+                      src="${item.imgurl1}"
+                      alt="">
+                  </div>
+                </div>
+                <div class="bd">
+                  <div class="prdtTags"><span>${item.tit}</span></div>
+                  <h2 class="goodsname"><a href=""><span>${item.title}</span></a></h2>
+                  <p class="total">
+                    <span class="realPic">${item.price1}</span>
+                    <span class="counPic">${item.price2}</span>
+                  </p>
+                </div>
+              </div>
+            `                
+          })
+          suggestion.innerHTML = goodsStr
+        }
+    })
+
+topSell.onclick = function(){  
+    ajax({
+        url: './img/goods3.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json){
+            var goodsStr = '';
+          json.forEach(function(item,index){
+            goodsStr += `
+            <div class="m-product">
+            <div class="hd">
+              <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+              <div class="goodsimg">
+                <img
+                  src="${item.imgurl1}"
+                  alt="">
+              </div>
+            </div>
+            <div class="bd">
+              <div class="prdtTags"><span>${item.tit}</span></div>
+              <h2 class="goodsname"><a href=""><span>${item.title}</span></a></h2>
+              <p class="total">
+                <span class="realPic">${item.price1}</span>
+                <span class="counPic">${item.price2}</span>
+              </p>
+            </div>
+          </div>
+            `
+          })
+          suggestion.innerHTML = goodsStr
+        }
+    })
+}
+recommend.onclick = function(){
+    ajax({
+        url : './img/goods2.json',
+        type: 'get',
+        dataType:'json',
+        success: function(json){
+           var goodsStr = ''
+            json.forEach(function(item,index){
+                goodsStr += `
+                <div class="m-product">
+                <div class="hd">
+                  <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+                  <div class="goodsimg">
+                    <img
+                      src="${item.imgurl1}"
+                      alt="">
+                  </div>
+                </div>
+                <div class="bd">
+                  <div class="prdtTags"><span>${item.tit}</span></div>
+                  <h2 class="goodsname"><a href=""><span>${item.title}</span></a></h2>
+                  <p class="total">
+                    <span class="realPic">${item.price1}</span>
+                    <span class="counPic">${item.price2}</span>
+                  </p>
+                </div>
+              </div>
+            `                
+          })
+          suggestion.innerHTML = goodsStr
+        }
+    })
+}
+on(commonTab,'click','a',function(){
+    for(var i = 0,len = font.length; i < len; i++){
+        font[i].className = '';
+    }
+    this.className = 'click';
+})

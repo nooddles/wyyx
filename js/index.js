@@ -174,7 +174,7 @@ window.onscroll = function(){
 }
 
 //轮播图数据请求
-var trunData = document.querySelector('.swiper-wrapper')
+var trunData = document.querySelector('.swiper-wrapper');
     ajax({
         url: "./img/goods1.json",
         type: "get",
@@ -206,17 +206,18 @@ var trunData = document.querySelector('.swiper-wrapper')
                 </div>
                 `
              
-            })
+            });
             trunData.innerHTML = goodsStr
-        }
-    })
+        };
+    });
 
 //推荐数据请求
-var suggestion = document.querySelector('.showContainer')
-var commonTab = document.querySelector('.commontab')
-var font = document.querySelectorAll('.commontab a')
-var topSell = document.querySelector('.commontab .topSell')
-var recommend = document.querySelector('.commontab .recommend')
+var suggestion = document.querySelector('.showContainer');
+var commonTab = document.querySelector('.commontab');
+var font = document.querySelectorAll('.commontab a');
+var topSell = document.querySelector('.commontab .topSell');
+var recommend = document.querySelector('.commontab .recommend');
+
     ajax({
         url : './img/goods2.json',
         type: 'get',
@@ -225,9 +226,10 @@ var recommend = document.querySelector('.commontab .recommend')
            var goodsStr = ''
             json.forEach(function(item,index){
                 goodsStr += `
-                <div class="m-product">
+                <div class="m-product" code='${item.code}'>
+                <a href="http://localhost:3000/goods.html" class="skip"></a>
                 <div class="hd">
-                  <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+                <a href="http://localhost:3000/goods.html" title="一次性医用口罩50片，秋季囤货备用" class="skip"></a>
                   <div class="goodsimg">
                     <img
                       src="${item.imgurl1}"
@@ -259,8 +261,9 @@ topSell.onclick = function(){
           json.forEach(function(item,index){
             goodsStr += `
             <div class="m-product">
+            <a href="http://localhost:3000/goods.html" class="skip"></a>
             <div class="hd">
-              <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+            <a href="http://localhost:3000/goods.html" title="一次性医用口罩50片，秋季囤货备用" class="skip"></a>
               <div class="goodsimg">
                 <img
                   src="${item.imgurl1}"
@@ -292,8 +295,9 @@ recommend.onclick = function(){
             json.forEach(function(item,index){
                 goodsStr += `
                 <div class="m-product">
+                <a href="http://localhost:3000/goods.html" class="skip"></a>
                 <div class="hd">
-                  <a href="" title="一次性医用口罩50片，秋季囤货备用"></a>
+                <a href="http://localhost:3000/goods.html" title="一次性医用口罩50片，秋季囤货备用" class="skip"></a>
                   <div class="goodsimg">
                     <img
                       src="${item.imgurl1}"
@@ -321,3 +325,5 @@ on(commonTab,'click','a',function(){
     }
     this.className = 'click';
 })
+
+//跳转详情页

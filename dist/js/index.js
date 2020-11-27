@@ -210,6 +210,7 @@ var commonTab = document.querySelector('.commontab');
 var font = document.querySelectorAll('.commontab a');
 var topSell = document.querySelector('.commontab .topSell');
 var recommend = document.querySelector('.commontab .recommend');
+var products = document.querySelectorAll('.m-product');
 ajax({
   url: './img/goods2.json',
   type: 'get',
@@ -217,7 +218,7 @@ ajax({
   success: function success(json) {
     var goodsStr = '';
     json.forEach(function (item, index) {
-      goodsStr += "\n                <div class=\"m-product\">\n                <div class=\"hd\">\n                  <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"".concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
+      goodsStr += "\n                <div class=\"m-product\" code='".concat(item.code, "'>\n                <a href=\"http://localhost:3000/goods.html\" class=\"skip\"></a>\n                <div class=\"hd\">\n                <a href=\"http://localhost:3000/goods.html\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\" class=\"skip\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"").concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
     });
     suggestion.innerHTML = goodsStr;
   }
@@ -231,7 +232,7 @@ topSell.onclick = function () {
     success: function success(json) {
       var goodsStr = '';
       json.forEach(function (item, index) {
-        goodsStr += "\n            <div class=\"m-product\">\n            <div class=\"hd\">\n              <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n              <div class=\"goodsimg\">\n                <img\n                  src=\"".concat(item.imgurl1, "\"\n                  alt=\"\">\n              </div>\n            </div>\n            <div class=\"bd\">\n              <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n              <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n              <p class=\"total\">\n                <span class=\"realPic\">").concat(item.price1, "</span>\n                <span class=\"counPic\">").concat(item.price2, "</span>\n              </p>\n            </div>\n          </div>\n            ");
+        goodsStr += "\n            <div class=\"m-product\">\n            <a href=\"http://localhost:3000/goods.html\" class=\"skip\"></a>\n            <div class=\"hd\">\n            <a href=\"http://localhost:3000/goods.html\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\" class=\"skip\"></a>\n              <div class=\"goodsimg\">\n                <img\n                  src=\"".concat(item.imgurl1, "\"\n                  alt=\"\">\n              </div>\n            </div>\n            <div class=\"bd\">\n              <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n              <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n              <p class=\"total\">\n                <span class=\"realPic\">").concat(item.price1, "</span>\n                <span class=\"counPic\">").concat(item.price2, "</span>\n              </p>\n            </div>\n          </div>\n            ");
       });
       suggestion.innerHTML = goodsStr;
     }
@@ -246,7 +247,7 @@ recommend.onclick = function () {
     success: function success(json) {
       var goodsStr = '';
       json.forEach(function (item, index) {
-        goodsStr += "\n                <div class=\"m-product\">\n                <div class=\"hd\">\n                  <a href=\"\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"".concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
+        goodsStr += "\n                <div class=\"m-product\">\n                <a href=\"http://localhost:3000/goods.html\" class=\"skip\"></a>\n                <div class=\"hd\">\n                <a href=\"http://localhost:3000/goods.html\" title=\"\u4E00\u6B21\u6027\u533B\u7528\u53E3\u7F6950\u7247\uFF0C\u79CB\u5B63\u56E4\u8D27\u5907\u7528\" class=\"skip\"></a>\n                  <div class=\"goodsimg\">\n                    <img\n                      src=\"".concat(item.imgurl1, "\"\n                      alt=\"\">\n                  </div>\n                </div>\n                <div class=\"bd\">\n                  <div class=\"prdtTags\"><span>").concat(item.tit, "</span></div>\n                  <h2 class=\"goodsname\"><a href=\"\"><span>").concat(item.title, "</span></a></h2>\n                  <p class=\"total\">\n                    <span class=\"realPic\">").concat(item.price1, "</span>\n                    <span class=\"counPic\">").concat(item.price2, "</span>\n                  </p>\n                </div>\n              </div>\n            ");
       });
       suggestion.innerHTML = goodsStr;
     }
@@ -259,4 +260,11 @@ on(commonTab, 'click', 'a', function () {
   }
 
   this.className = 'click';
+}); //跳转详情页
+
+on(suggestion, 'click', 'products', function () {
+  for (var i = 0, len = products.length; i < len; i++) {
+    var code = products[i].getAttribute('code');
+    alert('code');
+  }
 });

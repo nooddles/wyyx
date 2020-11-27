@@ -187,4 +187,12 @@ window.onscroll = function () {
   } else {
     nav.style.position = 'static';
   }
+}; //获取验证码
+
+
+var btn3 = document.querySelector('.testing i');
+var Yzm = document.querySelector('.testing .iptb input');
+
+btn3.onclick = function () {
+  Yzm.value = getYzm(6);
 };

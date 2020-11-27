@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>商品列表页</title>
+  <title>购物车</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/swiper.min.css">
-  <link rel="stylesheet" href="./css/list.css">
+ 
+  <link rel="stylesheet" href="./css/shoppingcar.css">
 </head>
 
 <body>
@@ -121,7 +121,6 @@
       </div>
     </div>
   </div>
-
   <div id="main" class="container clearfix">
     <!-- logo -->
     <h1 class="logo "><a href="http://localhost:3000/" class="icon" title="网易严选">网易优选</a></h1>
@@ -411,118 +410,29 @@
     </div>
   </div>
 
-  <!-- 详情页 -->
-  <div class="g-list">
-    <div class="g-row">
-      <div class="m-crumbs">
-        <a href="/">首页</a>
-        <span class="icon-arrow"></span>
-        <span class="z-cur">居家生活</span>
-      </div>
-      <div class="focus">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href=""><img
-                  src="https://yanxuan.nosdn.127.net/bb4c4e1347c0e3c84b895aaa637c1dc6.jpg?type=webp&imageView&quality=95&thumbnail=1090x310"
-                  alt=""></a>
-            </div>
-            <div class="swiper-slide">
-              <a href=""><img
-                  src="https://yanxuan.nosdn.127.net/10a399453c51aedda0a66f703616fe18.jpg?type=webp&imageView&quality=95&thumbnail=1090x310"
-                  alt=""></a>
-            </div>
-            <div class="swiper-slide">
-              <a href=""><img
-                  src="https://yanxuan.nosdn.127.net/ac90854d8a831fb98d4849cd9ee89196.jpg?type=webp&imageView&quality=95&thumbnail=1090x310"
-                  alt=""></a>
-            </div>
-          </div>
-          <!-- 如果需要分页器 -->
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
+  <div class="wrap">
+    <div class="main">
+        <div class="title">
+            <span class="good">商品</span>
+            <span class="price">单价</span>
+            <span class="num">数量</span>
+            <span class="move">操作</span>
+            <span class="total">合计</span>
         </div>
-      </div>
-      <div class="goodsArea">
-        <div class="sortBar">
-          <div class="category clearfix">
-            <span class="name">分类</span>
-            <div class="categoryGroup">
-              <a href="javascript:;">口碑好物</a>
-              <a href="javascript:;">举家餐厨双12预售</a>
-              <a href="javascript:;">抑菌防螨</a>
-              <a href="javascript:;">秋冬换新</a>
-              <a href="javascript:;">收纳好物</a>
-              <a href="javascript:;">北欧原木</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-              <a href="javascript:;">餐厨爆款清单</a>
-            </div>
-          </div>
-          <div class="area">
-            <span class="name">配送地区：</span>
-            <div class="categoryGroup">
-              <a href="javascript:;">口碑好物</a>
-              <a href="javascript:;">举家餐厨双12预售</a>
-              <a href="javascript:;">抑菌防螨</a>
-              <a href="javascript:;">秋冬换新</a>
-              <a href="javascript:;">收纳好物</a>
-              <a href="javascript:;">北欧原木</a>
-            </div>
-          </div>
-          <div class="sorts">
-            <span class="name">分类:</span>
-            <div class="categoryGroup">
-              <a href="javascript:;">口碑好物</a>
-              <a href="javascript:;">举家餐厨双12预售</a>
-              <a href="javascript:;">抑菌防螨</a>
-              <a href="javascript:;">秋冬换新</a>
-              <a href="javascript:;">收纳好物</a>
-              <a href="javascript:;">北欧原木</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="m-content">
-        <div class="leve12">
-          <div class="hd">
-            <p class="s-title">
-              <span class="f-left">口碑好物</span>
-            </p>
-            <p class="desc">品质爆款</p>
-          </div>
-        </div>
-      </div>
-      <ul class="m-itemlist clearfix">
-        <!-- <li class="item">
-          <div class="m-product">
-            <div class="hd">
-              <a href=""><img src="https://yanxuan-item.nosdn.127.net/149ce48ad94eb6ef50c973b4794edc8b.png?type=webp&imageView&quality=95&thumbnail=245x245" alt=""></a>
-            </div>
-            <div class="bd">
-              <div class="Tags"></div>
-              <h4 class="name"><a href="">轻便午睡折叠床</a></h4>
-              <p class="price"><span>￥299</span></p>
-            </div>
-          </div>
-        </li> -->
-      </ul>
+        <ul class="lists">
+            <!-- <li>
+                <img src="https://yanxuan-item.nosdn.127.net/149ce48ad94eb6ef50c973b4794edc8b.png?type=webp&imageView&quality=95&thumbnail=245x245" alt="">
+                <h3>多功能私享按摩椅</h3>
+                <p>￥299</p>
+                <strong>-</strong> <span>0</span> <i>+</i>
+                <em>删除</em>
+            </li> -->
+        </ul>
     </div>
+</div>
 
-  </div>
 
-  <!-- 客户服务 -->
+
   <div id="client" class="container clearfix">
     <div class="left">
       <h2>客户服务</h2>
@@ -562,9 +472,11 @@
     </div>
   </div>
 
+
+
   <!-- 底部 -->
   <div id="footer">
-    <div class="container">
+    <div class=" container">
       <div class="promise clearfix">
         <ul class="clearfix">
           <li>
@@ -608,21 +520,8 @@
   </div>
   <div class="mask"></div>
   <script src="./js/tool.js"></script>
-  <script src="./js/swiper.min.js"></script>
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      // direction: 'vertical',
-      loop: true,
-      autoplay: 3000,
-      // 如果需要分页器
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      // 如果需要前进后退按钮
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-    })        
-  </script>
-  <script src="./js/list.js"></script>
+  <script src="./js/jquery-1.8.3.js"></script>
+  <script src="./js/shoppingcar.js"></script>
 </body>
 
 </html>

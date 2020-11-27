@@ -1,5 +1,281 @@
-$width:400px;
-h2{
-  color: blue;
-  width: $width;
+.icon{
+  background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-s2904006215-b2811ec0e9.png?imageView&type=webp) no-repeat;
+}
+.icon2{
+  background: url(https://yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png?imageView&type=webp);
+}
+.icon3{
+  background: url(https://urswebzj.nosdn.127.net/webzj_cdn101/sprite_61fbe151ab715649c6b7c4ec39156201.png);
+}
+.icon4{
+  background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfoot-sb38e8b0402-214e6650b9.png?imageView&type=webp)no-repeat center;
+}
+.icon5{
+  background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sb35ce57899-796b48a324.png?imageView&type=webp);
+}
+
+.goodslist{
+  width: 1090;
+  background: #fff;
+  padding: 14px 20px 20px;
+  border: solid 1px rgba($color: #fff, $alpha: 0.3);
+  position: absolute;
+  top: 181px;
+  display: none;
+ ul{
+   float: left;
+   text-align: center;
+   h3{
+     display: inline-block;
+     width: 124px;
+     font-size: 14px;
+     font-weight: 600;
+     margin-right: 24px;
+     line-height: 24px;
+     text-align: left;
+     margin-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+   }
+
+   li{
+    // max-width: 70;
+    max-height: 48px;
+    height: 48px;
+    margin-left: 4px;
+    line-height: 1.2;
+    text-align: left;
+    a{
+      display: inline-block;
+      width: 70px;
+      
+      vertical-align: middle;
+      font-size: 14px;
+      &:hover{
+        color: #cc9756;
+      }
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+    }
+   }
+ }
+}
+
+.g-list{
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+  position: relative;
+  .g-row{
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    .m-crumbs{
+      font-size: 12px;
+      color: #333;
+      line-height: 1;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .icon-arrow{
+      background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/arrow-s8f43eb714c-d446c53437.png?imageView&type=webp) no-repeat;
+      background-position: 0 -1129px;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      height: 11px;
+      width: 5px;
+      margin: 0 5px;
+    }
+  }
+  .focus{
+    margin-bottom: 30px;
+    height: 310px;
+    .swiper-container {
+      width: 100%;
+  }  
+  }
+  .goodsArea{
+    padding: 0 40px;
+    position: relative;
+    background-color: #fff;
+    .sortBar{
+      margin-top: 10px;
+      border-bottom: 1px solid #eaeaea;
+      .category{
+        line-height: 1;
+        padding-top: 20px;
+        .name{
+          font-size: 14px;
+          color: #999;
+          float: left;
+          margin-right: 28px;
+        }
+        .categoryGroup{
+          float: left;
+          margin-bottom: 4px;
+          width: 930px;
+          a{
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 16px;
+            font-size: 14px;
+           &:hover{
+            color: #b4a078;
+           }
+          }
+        }
+      }
+      .area{
+        overflow: hidden;
+        border-top: 1px dashed #dedede;
+        line-height: 1;
+        padding-top: 20px;
+        .name{
+          font-size: 14px;
+          color: #999;
+          float: left;
+  
+        }
+        .categoryGroup{
+          float: left;
+          margin-bottom: 4px;
+          width: 930px;
+          a{
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 16px;
+            font-size: 14px;
+           &:hover{
+            color: #b4a078;
+           }
+          }
+        }
+      }
+      .sorts{
+        position: relative;
+        overflow: hidden;
+        padding: 20px 0;
+        line-height: 1;
+        border-top: 1px dashed #dedede;
+        .name{
+          font-size: 14px;
+          color: #999;
+          float: left;
+          margin-right: 28px;
+        }
+        .categoryGroup{
+          float: left;
+          margin-bottom: 4px;
+          width: 930px;
+          a{
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 16px;
+            font-size: 14px;
+           &:hover{
+            color: #b4a078;
+           }
+          }
+        }
+      }
+    }
+  }
+  .m-content{
+    .leve12{
+      padding-top: 30px;
+      .hd {
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 40px;
+        .s-title{
+          display: inline-block;
+          margin-bottom: 10px;
+          .f-left{
+            font-size:24px;
+            font-weight: 700;
+            line-height: 44px;
+          }
+        }
+        .desc{
+          font-size: 14px;
+          color: #999;
+          line-height: 1.5;
+        }
+      }
+    }
+    }
+    .m-itemlist{
+      margin-top: 52px;
+      margin-right: -10px;
+      .item{
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        .m-product{
+          width: 245px;
+          height: 401px;
+          line-height: 1;
+          text-align: center;
+          font-size: 13px;
+          .hd{
+            position: relative;
+            margin-bottom: 8px;
+            overflow: hidden;
+            background-color: #f4f4f4;
+            img{
+              width: 245px;
+              height: 245px;
+              background-color: #f4f4f4;
+              color: #f4f4f4;
+              display: block;
+              margin: 0 auto;
+            }
+          }
+          .bd{
+            .Tags{
+              height: 20px;
+              font-size: 0;
+              color: #fff;
+              width: 200px;
+              margin: 0 auto 3px;
+              overflow: hidden;
+            }
+            .name{
+              width: 166px;
+              margin: 0 auto 4px;
+              max-height: 40px;
+              line-height: 20px; 
+            }
+            .price{
+              color: #d4282d;
+              text-align: center;
+              span{
+                display: inline-block;
+                height: 20px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+  }
+  
+}
+
+
+
+
+//遮罩层
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  display: none;
 }

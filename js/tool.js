@@ -299,4 +299,25 @@ function offset(dom,bool){
     }
   }
 
+//获取min-max的随机数
+function getRand(min, max) {
+	return (parseInt(Math.random() * (max - min + 1) + min))
+}
 
+function getYzm(num) {
+	//num位验证码
+	//字符从哪来？
+	//从ascii码中来 48-122范围取出
+	//排除58-64 91-96
+	var yzm = "";
+	var rand;
+	for (var i = 0; i < num; i++) {
+		rand = getRand(48, 122);
+		if (rand >= 58 && rand <= 64 || rand >= 91 && rand <= 96) {//排除58-64,91-96
+			i--;//重新获取数值d
+		} else {
+			yzm += String.fromCharCode(rand);
+		}
+	}
+	return yzm
+}

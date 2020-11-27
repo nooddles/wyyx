@@ -152,6 +152,14 @@ userlogin.onclick = function(){
     con.replaceChild(reipt,test)
 }
 
+//获取验证码
+var btn3 = document.querySelector('.testing i')
+var Yzm = document.querySelector('.testing .iptb input')
+btn3.onclick = function(){
+    
+    Yzm.value = getYzm(6)
+}
+
 //显示隐藏
 li.onclick = function () {
     box.style.display = 'block'
@@ -208,7 +216,7 @@ var trunData = document.querySelector('.swiper-wrapper');
              
             });
             trunData.innerHTML = goodsStr
-        };
+        }
     });
 
 //推荐数据请求

@@ -165,6 +165,14 @@ userlogin.onclick = function () {
   reipt.className = 'inputbox3';
   btn1.innerText = '登录';
   con.replaceChild(reipt, test);
+}; //获取验证码
+
+
+var btn3 = document.querySelector('.testing i');
+var Yzm = document.querySelector('.testing .iptb input');
+
+btn3.onclick = function () {
+  Yzm.value = getYzm(6);
 }; //显示隐藏
 
 
@@ -210,7 +218,6 @@ var commonTab = document.querySelector('.commontab');
 var font = document.querySelectorAll('.commontab a');
 var topSell = document.querySelector('.commontab .topSell');
 var recommend = document.querySelector('.commontab .recommend');
-var products = document.querySelectorAll('.m-product');
 ajax({
   url: './img/goods2.json',
   type: 'get',
@@ -261,10 +268,3 @@ on(commonTab, 'click', 'a', function () {
 
   this.className = 'click';
 }); //跳转详情页
-
-on(suggestion, 'click', 'products', function () {
-  for (var i = 0, len = products.length; i < len; i++) {
-    var code = products[i].getAttribute('code');
-    alert('code');
-  }
-});
